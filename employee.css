@@ -1,0 +1,171 @@
+ /* General Styling */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #34495e;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    background: #e74c3c;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #c0392b;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sidebar .menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar .menu-btn:hover {
+    background: #34495e;
+}
+
+.sidebar .submenu {
+    list-style-type: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.sidebar .submenu li {
+    padding: 5px 0;
+}
+
+.sidebar .submenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.sidebar .submenu li a:hover {
+    color: #1abc9c;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f4f4f9;
+}
+
+.main-content h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.main-content p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Quick Links Section */
+.quick-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.quick-links a {
+    background: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.quick-links a:hover {
+    background: #2980b9;
+}
+
+/* Adjust carousel size to be fixed within the dashboard */
+.carousel {
+    width: 100%;
+    /* Ensures it takes up the full width of the container */
+    height: 600px;
+    /* Adjust the height to fit within your layout */
+    overflow: hidden;
+    /* Ensures content doesn't overflow */
+    padding: 0 20px;
+    /* Add padding on both sides to give space around the image */
+    box-sizing: border-box;
+    /* Includes padding within the element's total width */
+}
+
+/* Ensures carousel inner container takes full height */
+.carousel-inner {
+    height: 100%;
+    /* Ensures the carousel inner container takes full height */
+}
+
+/* Adjust image size and ensure it covers the container */
+.carousel-item img {
+    object-fit: cover;
+    /* This compresses and fills the space, while maintaining the aspect ratio */
+    height: 100%;
+    /* Ensure the image fills the container's height */
+    width: calc(100% - 40px);
+    /* Adjust width to account for padding (20px padding on both sides) */
+    margin: 0 auto;
+    /* Center the image horizontally within the carousel */
+}
